@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar/Navbar";
 import "./globals.css";
+import Footer from "@/components/Footer/Footer";
 
 export const metadata = {
   title: "Home Page | AnyTech",
@@ -14,6 +15,7 @@ export default function RootLayout({ children }) {
         <div className="max-w-screen-xl mx-auto md:p-8 p-2 antialiased">
           {children}
         </div>
+        <Footer></Footer>
       </body>
     </html>
   );
