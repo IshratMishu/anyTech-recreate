@@ -12,7 +12,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body >
         <Navbar></Navbar>
-        <div className="max-w-screen-xl mx-auto md:p-8 p-2 antialiased">
+        <div className="max-w-screen-xl mx-auto md:p-16 p-2 antialiased">
           {children}
         </div>
         <Footer></Footer>

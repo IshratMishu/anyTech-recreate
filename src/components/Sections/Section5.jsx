@@ -1,6 +1,7 @@
 'use client'
 import React, { useEffect } from 'react';
 import { CountUp } from 'countup.js';
+import SectionTitle from '../ReUsableStyle/SectionTitle';
 
 
 const Section5 = () => {
@@ -28,8 +29,9 @@ const Section5 = () => {
 
 
     return (
-        <div>
-            <h1 className='text-center text-[var(--blue)] font-montserrat font-bold tracking-widest pb-10'>TRUSTED BY THE BEST</h1>
+        <div className='mt-32'>
+            <SectionTitle heading={'TRUSTED BY THE BEST'}>
+            </SectionTitle>
             {/* countup */}
             <div className="flex justify-around items-center">
                 <div className="text-center">
