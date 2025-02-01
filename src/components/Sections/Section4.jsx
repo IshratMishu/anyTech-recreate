@@ -4,7 +4,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Autoplay, Pagination } from 'swiper/modules';
-import Image from 'next/image';
 import SectionTitle from '../ReUsableStyle/SectionTitle';
 import SwiperTexts from '../ReUsableStyle/SwiperTexts';
 
@@ -21,7 +20,7 @@ const Section4 = () => {
     };
 
     return (
-        <div>
+        <div className='mt-32'>
             <SectionTitle heading={'TECHNOLOGY BUILT FOR YOU'}
                 subHeading={'The future of finance'}>
             </SectionTitle>
@@ -49,14 +48,14 @@ const Section4 = () => {
                 <Swiper
                     onSwiper={(swiper) => (swiperRef.current = swiper)}
                     onSlideChange={(swiper) => setActiveTab(swiper.activeIndex)}
-                    // spaceBetween={30}
-                    // centeredSlides={true}
-                    // autoplay={{
-                    //     delay: 4000,
-                    //     disableOnInteraction: false,
-                    // }}
-                    // speed={1000}
-                    modules={[Pagination]}
+                    spaceBetween={30}
+                    centeredSlides={true}
+                    autoplay={{
+                        delay: 4000,
+                        disableOnInteraction: false,
+                    }}
+                    speed={1000}
+                    modules={[Autoplay, Pagination]}
                     className="mySwiper mt-12 shadow-sm"
                 >
                     <SwiperSlide >
