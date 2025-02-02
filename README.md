@@ -58,6 +58,3 @@ This project is licensed under the MIT License.
 
 💼 LinkedIn: [https://www.linkedin.com/in/ishratmishu/](https://www.linkedin.com/in/ishratmishu/)  
 
----
-
-Enjoy building with AnyTech! 🚀
