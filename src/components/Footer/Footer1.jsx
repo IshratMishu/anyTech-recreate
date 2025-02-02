@@ -1,11 +1,42 @@
-import React from 'react';
+'use client'
+import React, { useEffect, useRef } from 'react';
 import { IoIosArrowForward } from "react-icons/io";
+import { motion, useInView, useMotionValue, useSpring, useTransform } from "motion/react"
+
 
 const Footer1 = () => {
+     // Create motion value for X movement
+  const x = useMotionValue(0);
+
+  // Apply spring smoothing for a natural effect
+  const smoothX = useSpring(x, { stiffness: 40, damping: 40 });
+
+  // Transform the X movement for subtle effect
+  const moveX = useTransform(smoothX, [-100, 100], [-15, 15]);
+
+  // Mouse move handler
+  const handleMouseMove = (event) => {
+    const centerX = window.innerWidth / 2;
+    x.set(event.clientX - centerX);
+  };
+
+  // Track if the footer is in view
+  const ref = useRef(null);
+  const isInView = useInView(ref, { triggerOnce: true, threshold: 0.5 });
+ // Trigger only once
+
+  useEffect(() => {
+    if (isInView) {
+      window.addEventListener('mousemove', handleMouseMove);
+    }
+    return () => window.removeEventListener('mousemove', handleMouseMove);
+  }, [isInView]);
+
+
     return (
         <div className='relative font-montserrat text-white pt-36 border-b border-[#00E9EA] h-[480px] bg-gradient-to-t from-[#1F80F0] to-[#0d5ab1] overflow-hidden mt-6' style={{
-            clipPath: "polygon(0 0, 100% 44%, 100% 100%, 0% 100%)"
-        }}>
+            clipPath: "polygon(0 0, 100% 44%, 100% 100%, 0% 100%)" 
+        }} ref={ref} >
 
             <div className="max-w-screen-xl mx-auto md:p-8 p-4">
                 <div className="space-y-6 absolute z-10">
@@ -19,13 +50,22 @@ const Footer1 = () => {
 
 
             <div>
-                <svg
-                    className="lg:block hidden absolute h-[120%] w-[120%] left-[-10%] top-[-10%]"
-                    style={{ clipPath: "polygon(90% 60%, -10% 0, 60%, 100% 0)" }}
+                <motion.svg
+                    className="absolute h-[120%] w-[120%] left-[-10%] top-[-10%]"
+                    style={{ clipPath: "polygon(90% 60%, -10% 0, 60%, 100% 0)" , x: moveX  }}
                     preserveAspectRatio="xMidYMid slice"
                     viewBox="0 0 2316 1021"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
+                    initial={{ x: '-40%' }}
+                    animate={{ x: isInView ? 0 : '-40%' }} // Animate only when in view
+                    transition={{
+                      type: 'spring',
+                      stiffness: 50,
+                      damping: 20,
+                    }}
+                    whileInView={{ x: isInView ? 0 : '-40%' }}
+                    viewport={{ once: true}}
                 >
                     <g id="cta-background-patterns">
                         <g
@@ -865,7 +905,7 @@ const Footer1 = () => {
                             <stop offset="1" stopColor="#1F80F0"></stop>
                         </linearGradient>
                     </defs>
-                </svg>
+                </motion.svg>
             </div>
 
 

@@ -1,9 +1,19 @@
+'use client'
 import Image from 'next/image';
-import React from 'react';
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 const Section3 = () => {
+    useEffect(() => {
+        AOS.init();
+    }, [])
+
     return (
-        <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6'>
+        <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6'
+            data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom">
             <div className='space-y-6 p-8 bg-[#F8FCFF] rounded-3xl'>
                 <Image
                     width={200}

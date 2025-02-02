@@ -11,6 +11,7 @@ const Navbar = () => {
     const [dropdown, setDropdown] = useState(false);
     const [dropdown2, setDropdown2] = useState(false);
 
+
     return (
         <div className='font-inter absolute z-[999] left-0 right-0 lg:bg-transparent bg-[var(--blue)]'>
             <div className="max-w-screen-xl mx-auto md:px-16 md:py-6 py-2 px-2 flex justify-between items-center">
