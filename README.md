@@ -28,13 +28,14 @@ A modern and responsive landing page built with Next.js, Tailwind CSS, and optim
 1. Clone the repository:
 
    git clone https://github.com/IshratMishu/anyTech-recreate.git
+   
    cd anyTech-recreate
 
-2. Install dependencies:
+3. Install dependencies:
 
    npm install 
 
-3. Run the development server:
+4. Run the development server:
 
    npm run dev 
 
@@ -54,7 +55,8 @@ This project is licensed under the MIT License.
 
 ### 🔗 Connect with Me
 📧 Email: ishratjahan0425@gmail.com
-💼 LinkedIn: [your-profile](https://www.linkedin.com/in/ishratmishu/)  
+
+💼 LinkedIn: [https://www.linkedin.com/in/ishratmishu/](https://www.linkedin.com/in/ishratmishu/)  
 
 ---
 
