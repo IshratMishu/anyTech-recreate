@@ -20,15 +20,14 @@ const Section4 = () => {
     };
 
     return (
-        <div className='mt-32'>
+        <div className='md:mt-32 mt-20'>
             <SectionTitle heading={'TECHNOLOGY BUILT FOR YOU'}
                 subHeading={'The future of finance'}>
             </SectionTitle>
 
-
             <div className="">
                 {/* Tab Navigation */}
-                <div className="flex justify-between mt-8 lg:px-10 px-4">
+                <div className="md:flex hidden justify-between mt-8 lg:px-10 px-4">
                     {tabOptions.map((tab, index) => (
                         <button
                             key={index}

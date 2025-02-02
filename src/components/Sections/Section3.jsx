@@ -3,8 +3,8 @@ import React from 'react';
 
 const Section3 = () => {
     return (
-        <div className='grid lg:grid-cols-3 grid-cols-2 gap-6'>
-            <div className='space-y-6 p-8 bg-[#F8FCFF] rounded-3xl max-w-[360px] max-h-72'>
+        <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6'>
+            <div className='space-y-6 p-8 bg-[#F8FCFF] rounded-3xl'>
                 <Image
                     width={200}
                     height={200}
@@ -15,7 +15,7 @@ const Section3 = () => {
                 <h2 className='text-2xl font-montserrat text-[#0B305B] font-semibold'>Full-suite solutions</h2>
                 <p className='font-inter text-[#164377]'>Experience the ease of integration across various banking and payment functions with our comprehensive suite of solutions.</p>
             </div>
-            <div className='space-y-6 p-8 bg-[#F8FCFF] rounded-3xl max-w-[360px] max-h-72'>
+            <div className='space-y-6 p-8 bg-[#F8FCFF] rounded-3xl'>
                 <Image
                     width={200}
                     height={200}
@@ -26,7 +26,7 @@ const Section3 = () => {
                 <h2 className='text-2xl font-montserrat text-[#0B305B] font-semibold'>Simplify the complex</h2>
                 <p className='font-inter text-[#164377]'>Simplify complex processes and optimise your financial operations by leveraging the power of AI, Blockchain, Cloud Computing, and Big Data.</p>
             </div>
-            <div className='space-y-6 p-8 bg-[#F8FCFF] rounded-3xl max-w-[360px] max-h-72'>
+            <div className='space-y-6 p-8 bg-[#F8FCFF] rounded-3xl'>
                 <Image
                     width={200}
                     height={200}

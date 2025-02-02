@@ -3,15 +3,15 @@ import { IoIosArrowForward } from "react-icons/io";
 
 const Footer1 = () => {
     return (
-        <div className='relative font-montserrat text-white pt-36 border-b border-[#00E9EA] h-[480px] bg-gradient-to-t from-[#1F80F0] to-[#0d5ab1] overflow-hidden' style={{
+        <div className='relative font-montserrat text-white pt-36 border-b border-[#00E9EA] h-[480px] bg-gradient-to-t from-[#1F80F0] to-[#0d5ab1] overflow-hidden mt-6' style={{
             clipPath: "polygon(0 0, 100% 44%, 100% 100%, 0% 100%)"
         }}>
 
-            <div className="max-w-screen-xl mx-auto md:p-8 p-2">
+            <div className="max-w-screen-xl mx-auto md:p-8 p-4">
                 <div className="space-y-6 absolute z-10">
-                    <h1 className='text-6xl font-semibold'>Legacy no longer</h1>
-                    <p className='text-lg font-inter'>Talk to us to find out how we can transform your organisation for the future</p>
-                    <button className='flex items-center gap-1 bg-[var(--orange)] duration-500 px-6 py-2 rounded-sm group font-semibold'>
+                    <h1 className='md:text-6xl text-4xl font-semibold'>Legacy no longer</h1>
+                    <p className='md:text-lg text-base font-inter'>Talk to us to find out how we can transform your organisation for the future</p>
+                    <button className='flex items-center gap-1 bg-[var(--orange)] duration-500 md:px-6 py-2 px-20 rounded-sm group font-semibold'>
                         <span className="transition-transform duration-500 group-hover:-translate-x-1">Contact Us</span>
                         <IoIosArrowForward className='transition-transform duration-500 group-hover:translate-x-1 text-xs' /></button>
                 </div>

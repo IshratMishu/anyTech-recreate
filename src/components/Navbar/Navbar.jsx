@@ -74,7 +74,7 @@ const Navbar = () => {
 
 
             {/* mobile and tablet view */}
-            <ul className={`lg:hidden bg-[#1974dc] fixed md:top-20 top-10 w-full h-auto py-4 px-6 space-y-2 duration-500 ${open ? 'left-0' : '-left-full'}`}>
+            <ul className={`lg:hidden bg-[#1974dc] fixed md:top-20 top-12 w-full h-auto py-4 px-6 space-y-2 duration-500 ${open ? 'left-0' : '-left-full'}`}>
 
                 <li onClick={() => setDropdown2(!dropdown2)}
                     className="relative cursor-pointer px-6 py-3">

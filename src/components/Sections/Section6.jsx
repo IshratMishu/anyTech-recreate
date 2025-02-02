@@ -5,14 +5,13 @@ import React from 'react';
 const Section6 = () => {
 
     return (
-        <div className='grid lg:grid-cols-5 md:grid-cols-3 gap-14 mx-auto items-center mt-32'>
+        <div className='md:grid lg:grid-cols-5 md:grid-cols-3 flex overflow-y-auto gap-14 mx-auto items-center md:mt-32 mt-20 mb-10'>
             {/* brands image */}
             <Image
                 height={200}
                 width={200}
                 src={'/assets/chengde.png'}
-                alt='brand'
-                className=''></Image>
+                alt='brand'></Image>
 
             <Image
                 height={200}
