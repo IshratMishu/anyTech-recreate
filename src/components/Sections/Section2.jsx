@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 const Section2 = () => {
     return (
-        <div className='mt-32'>
+        <div className='lg:mt-32 mt-0'>
             <SectionTitle heading={'OUR PHILOSOPHY'}
                 subHeading={'Human-centred innovation'}>
             </SectionTitle>

@@ -1,3 +1,4 @@
+import Banner from "@/components/Banner/Banner";
 import Section1 from "@/components/Sections/Section1";
 import Section2 from "@/components/Sections/Section2";
 import Section3 from "@/components/Sections/Section3";
@@ -9,6 +10,7 @@ import Section6 from "@/components/Sections/Section6";
 export default function Home() {
   return (
     <div>
+      {/* <Banner></Banner> */}
       <Section1></Section1>
       <Section2></Section2>
       <Section3></Section3>

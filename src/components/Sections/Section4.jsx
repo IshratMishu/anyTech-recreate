@@ -28,11 +28,11 @@ const Section4 = () => {
 
             <div className="">
                 {/* Tab Navigation */}
-                <div className="flex justify-between mt-8 px-10">
+                <div className="flex justify-between mt-8 lg:px-10 px-4">
                     {tabOptions.map((tab, index) => (
                         <button
                             key={index}
-                            className={`text-lg py-2 px-10 font-inter rounded-3xl font-semibold text-[var(--blue)] transition-all duration-300
+                            className={`lg:text-lg text-base py-2 lg:px-10 px-4 font-inter rounded-3xl font-semibold text-[var(--blue)] transition-all duration-300
                 ${activeTab === index
                                     ? "bg-[#B9D9FF]"
                                     : "hover:bg-[#F5FAFF]"

@@ -33,7 +33,7 @@ const Section5 = () => {
             <SectionTitle heading={'TRUSTED BY THE BEST'}>
             </SectionTitle>
             {/* countup */}
-            <div className="flex justify-around items-center">
+            <div className="flex justify-around items-center pt-5">
                 <div className="text-center">
                     <h4 id="experience" className="font-montserrat text-6xl lg:text-8xl tracking-[-0.02em] font-semibold leading-none bg-gradient-to-b from-[var(--blue)] to-[#0057BB] text-transparent bg-clip-text">0</h4>
                     <p className='font-inter text-lg'>Years of Experience</p>

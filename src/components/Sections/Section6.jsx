@@ -5,7 +5,7 @@ import React from 'react';
 const Section6 = () => {
 
     return (
-        <div className='grid grid-cols-5 gap-14 mx-auto items-center mt-32'>
+        <div className='grid lg:grid-cols-5 md:grid-cols-3 gap-14 mx-auto items-center mt-32'>
             {/* brands image */}
             <Image
                 height={200}

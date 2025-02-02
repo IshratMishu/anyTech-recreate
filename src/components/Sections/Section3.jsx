@@ -3,7 +3,7 @@ import React from 'react';
 
 const Section3 = () => {
     return (
-        <div className='flex gap-6'>
+        <div className='grid lg:grid-cols-3 grid-cols-2 gap-6'>
             <div className='space-y-6 p-8 bg-[#F8FCFF] rounded-3xl max-w-[360px] max-h-72'>
                 <Image
                     width={200}
