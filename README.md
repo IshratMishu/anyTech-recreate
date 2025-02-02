@@ -27,8 +27,8 @@ A modern and responsive landing page built with Next.js, Tailwind CSS, and optim
 
 1. Clone the repository:
 
-   git clone https://github.com/your-username/anytech-landing-page.git
-   cd anytech-landing-page
+   git clone https://github.com/IshratMishu/anyTech-recreate.git
+   cd anyTech-recreate
 
 2. Install dependencies:
 
@@ -53,9 +53,8 @@ This project is licensed under the MIT License.
 ---
 
 ### 🔗 Connect with Me
-📧 Email: your-email@example.com  
-💼 LinkedIn: [your-profile](https://linkedin.com/in/your-profile)  
-🐦 Twitter: [@yourhandle](https://twitter.com/yourhandle)  
+📧 Email: ishratjahan0425@gmail.com
+💼 LinkedIn: [your-profile](https://www.linkedin.com/in/ishratmishu/)  
 
 ---
 
